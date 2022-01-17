@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.gallery{
+	margin: 10px 50px;
+	margin-top: 10%;
+}
+
+.gallery img{
+	width: 300px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+/*----- Form ----*/
+.wrapper{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #ffa6de;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgb(209,135,218); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"], input[type=password], input[type=number],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10%;
+  text-align: center;
+  width: 100%;
+  background: #c783ae;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer .bawah{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #b84d90;
+   text-align: center;
+   height: 30px;
+}

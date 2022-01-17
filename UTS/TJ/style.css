@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.slider{
+	overflow: hidden;
+	width: 560px;
+	height: 800px;
+	background: url(baju1.jpg);
+	margin: 100px auto;
+	animation: slide 20s infinite;
+	transition: opacity 2s ease-in-out;
+}
+.text1{
+	animation: text 3s 1;
+}
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+@keyframes slide{
+	5%{
+	background: url(baju5.jpg);
+	}
+	25%{
+	background: url(baju2.jpg);
+	}
+	50%{
+	background: url(baju3.jpg);
+	}
+	75%{
+	background: url(baju4.jpg);
+	}
+	100%{
+	background: url(baju1.jpg);
+}
+
+}

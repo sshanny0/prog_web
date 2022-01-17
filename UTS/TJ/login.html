@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="style6.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger").click(function(){
+         $(".wrapper").toggleClass("collapse");
+      });
+    });
+  </script>
+</head>
+<body>
+	<div class="wrapper">
+  <div class="top_navbar">
+	<div class="top_menu">
+      <div class="logo"></div>
+      <ul>
+        <li><a href="form2.html">
+          <i class="fas fa-user-plus"></i></a></li>
+        <li><a href="login.html">
+          <i class="fas fa-sign-in-alt"></i>
+          </a></li>
+        <li><a href="contact.html">
+          <i class="fas fa-address-book"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+    <br>
+  <br>
+  <br>
+  <br>
+	<font color="#7a4b49">
+	<h1>Sign In</h1>
+
+	<div class="kotak_login">
+		<fieldset>
+		<legend><p class="tulisan_login">Already have an account?</p></legend>
+
+		<form>
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Your Username">
+
+			<label>Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Your Password">
+
+			<label>
+      		<input type="checkbox" checked="checked" name="remember">Remember me
+    		</label><br>
+    		<center><input type="submit" class="tombol_login" value="LOGIN"></center>
+    		<br>
+			<center><a class = "tombol_logout" href="home.html">BACK</a></center>
+			<br><br>
+			</form>
+  </div>		
+		</fieldset>
+</body>
+</html>

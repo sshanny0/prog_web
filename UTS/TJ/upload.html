@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Download</title>
+   <meta charset="utf-8">
+	<style type="text/css">
+   .btn_style{
+		border: 1px solid #cecece;
+		border-radius: 3px;
+		padding: 3px 10px;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+		color: white;
+		background-color: #f7a6d9;
+	}
+	.btn_style:hover{
+		border: 1px solid #b1b1b1;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+</style>
+<link rel="stylesheet" href="style6.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger").click(function(){
+         $(".wrapper").toggleClass("collapse");
+      });
+    });
+  </script>
+</head>
+<body bgcolor = "#ffe6f1" link = "#7a4b49" alink = "#c47eaa" vlink = "#7a4b49">
+	<div class="wrapper">
+  <div class="top_navbar">
+	<div class="top_menu">
+      <div class="logo"></div>
+      <ul>
+        <li><a href="form2.html">
+          <i class="fas fa-user-plus"></i></a></li>
+        <li><a href="login.html">
+          <i class="fas fa-sign-in-alt"></i>
+          </a></li>
+        <li><a href="contact.html">
+          <i class="fas fa-address-book"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+	<div style="background-color: #fcd4f7;
+	border: 1px solid #fcd4f7;
+	color: black;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">
+	<p><h2>Upload</h2></p></div>
+	<br>
+<form action="" method="post" enctype="multipart/form-data">
+	<br>
+	<font face = "arial" size = "3" color = "#a16464">
+	<center>Have a wishlist, but you can't find here?</center><br>
+	<div style="border: 1px dashed; height: auto; margin: 10px 0px; padding: 5px; text-align: center; width: auto;">Drop files below ↓ <br><br><br><input type='file' name='file' /></p><br>
+      <button class="btn_style">Upload File</button></div>
+      	<br>
+      	<br>
+</form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+    .login {
+        margin: 80px auto;
+        width: 600px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #ffa6de;
+        border:solid 3px grey;
+        border-radius: 15px;
+    }
+    input[type=email], input[type=password]{
+        background-color: #eef799;
+    }
+	.btn_style{
+		border: 1px solid #cecece;
+		border-radius: 3px;
+		padding: 3px 10px;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+		color: white;
+		background-color: #c783ae;
+	}
+	.btn_style:hover{
+		border: 1px solid #b1b1b1;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	</style>
+	<link rel="stylesheet" href="style6.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger").click(function(){
+         $(".wrapper").toggleClass("collapse");
+      });
+    });
+  </script>
+</head>
+
+<body bgcolor = "#ffe6f1">
+	<div class="wrapper">
+  <div class="top_navbar">
+	<div class="top_menu">
+      <div class="logo"></div>
+      <ul>
+        <li><a href="form.html">
+          <i class="fas fa-user-plus"></i></a></li>
+        <li><a href="login.html">
+          <i class="fas fa-sign-in-alt"></i>
+          </a></li>
+        <li><a href="contact.html">
+          <i class="fas fa-address-book"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+	<div class="login">
+		<form action="" method="POST" class="pure-form">
+			<font color = "#7a4b49">
+			<fieldset>
+			<table>
+		<legend> <h1><b><center>CREATE YOUR ACCOUNT!</center></b></h1></legend>
+			<tr>
+			<p>			
+	<td><label for="nama1">First Name</label></td>
+    <td><input type="text" id="nama1" name="depan" placeholder="Your First Name!"></td>
+    <td><label for="nama2">Nama Belakang</label></td>
+    <td><input type="text" id="nama2" name="belakang" placeholder="Your Last Name!"></td></p></tr>
+
+    <tr>
+     <p>
+     	<td><label for="uname">Username</label></td>
+            <td><input type="text" name="uname" placeholder="Desired Username!" /></td>
+        </p></tr>
+        <tr>
+        	<p>
+            <td><label>Date of Birth</label></td>
+            <td><input type="date" name="tanggal" /></td>
+        </p>
+        </tr>
+    <tr>
+     <p>
+     	<td><label for="email">E-Mail</label></td>
+            <td><input type="email" name="email" placeholder="Your Email" required/></td>
+        </p></tr>
+        <tr>
+        <p>
+    <td><label>Phone Number</label></td>
+	<td><input type="tel"  name="telepon" placeholder="Your Phone Number"/></td></p></tr>
+
+	<tr>
+		<p>
+		<td><label> Password</label></td>
+	<td><input type = "password" name = "pass" placeholder = "Your Password" required></td></p>
+	</tr>
+
+	<tr>
+		<p>
+		<td><label>Confirm Password</label></td>
+	<td><input type = "password" name = "pass2" placeholder = "Confirm it" required></td></p>
+	</tr>
+</table>
+	
+	<p>
+   <center><button class="btn_style">Sign Up</button></center></p>
+  </fieldset></form> </div>
+
+
+</body>
+</html>
